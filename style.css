@@ -1,0 +1,138 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* overflow: hidden; */
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo h1{
+    width: 160px;
+    cursor: pointer;
+    color: antiquewhite;
+    font-size: 20px;
+    letter-spacing: 12px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    margin-left: 30px;
+    padding: 7px 20px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.circle{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#svgCircle{
+    stroke-dasharray: 1256;
+    stroke-dashoffset: 1256;
+    transition: 1s;
+}
+span {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: #fff;
+}
+#step1{
+    right: 36%;
+    bottom: 6.2%;  
+}
+#step2{
+    left: 13%;
+    bottom: 23%;
+}
+#step3{
+    left: 13.5%;
+    top: 22%;
+}
+#step4{
+    right: 25%;
+    top: 11.5%;
+}
+#step5{
+    right: 4.3%;
+    top: 49%;
+}
+.user-box{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 350px;
+    color: #fff;
+    transition: 1s;
+}
+.user img{
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.social-icon img{
+    width: 50px;
+    border-radius: 0%;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.user h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.user p{
+    /* border: 2px solid red; */
+    line-height: 25px;
+    transform: translateX(.3%);
+    margin-top: 15px;
+    color: #c0c0c0;
+}
+.user{
+    height: 500px;
+}

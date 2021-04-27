@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+      <div class="navbar">
+          <div class="logo">
+              <h1>INFLUENCER</h1>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Ports</a></li>
+                  <li><a href="">Abourt</a></li>
+              </ul>
+          </nav>
+          <button>Join now</button>
+      </div>
+      <div class="circle">
+          <svg height="402" width="402">
+                <circle r="200" cx="201" cy="201" stroke-width="1px" stroke="gray" fill="none" />
+          </svg>
+          <svg height="402" width="402">
+            <circle r="200" cx="201" cy="201" stroke-width="1px" stroke="#fff" fill="none" id="svgCircle"/>
+        </svg>
+        <div>
+            <span id="step1"></span>
+            <span id="step2"></span>
+            <span id="step3"></span>
+            <span id="step4"></span>
+            <span id="step5"></span>
+        </div>        
+      </div>
+      <div class="user-box" id="UserBox">
+          <div class="user">
+              <img src="img/person-1.jpg">
+              <h1>Alan Doo</h1>
+              <p>This Svg Profile Structure and His person is Web CEO of company</p>
+              <div class="social-icon">
+                  <img src="img/instagram.png">
+                  <img src="img/facebook.png">
+                  <img src="img/twitter.png">
+              </div>
+          </div>
+
+          <div class="user">
+            <img src="img/person-2.jpg">
+            <h1>Alexandra</h1>
+            <p>This Svg Profile Structure and His person is Vice Presitand</p>
+            <div class="social-icon">
+                <img src="img/instagram.png">
+                <img src="img/facebook.png">
+                <img src="img/twitter.png">
+            </div>
+        </div>
+
+        <div class="user">
+            <img src="img/person-3.jpg">
+            <h1>Danials Mark</h1>
+            <p>This Svg Profile Structure and His person is Depty Manager </p>
+            <div class="social-icon">
+                <img src="img/instagram.png">
+                <img src="img/facebook.png">
+                <img src="img/twitter.png">
+            </div>
+        </div>
+
+        <div class="user">
+            <img src="img/person-4.jpg">
+            <h1>Anjal</h1>
+            <p>This Svg Profile Structure and His person is Manager</p>
+            <div class="social-icon">
+                <img src="img/instagram.png">
+                <img src="img/facebook.png">
+                <img src="img/twitter.png">
+            </div>
+        </div>
+
+        <div class="user">
+            <img src="img/person-5.jpg">
+            <h1>anaza</h1>
+            <p>This Svg Profile Structure and His person is Team Leader</p>
+            <div class="social-icon">
+                <img src="img/instagram.png">
+                <img src="img/facebook.png">
+                <img src="img/twitter.png">
+            </div>
+        </div>
+      </div>
+  </div>
+<script>
+    var circle = document.getElementById("svgCircle");
+    var step1 = document.getElementById("step1");
+    var step2 = document.getElementById("step2");
+    var step3 = document.getElementById("step3");
+    var step4 = document.getElementById("step4");
+    var step5 = document.getElementById("step5");
+    var main = document.getElementById("container");
+    var userbox = document.getElementById("UserBox");
+    main.style.backgroundImage = "url(img/img-1.jpg)";
+
+    step1.addEventListener('click',function(){
+        circle.style.strokeDashoffset = '1004';
+        main.style.backgroundImage = "url(img/img-2.jpg)";
+        userbox.style.top = "-300px";
+    });
+    step2.addEventListener('click',()=>{
+        circle.style.strokeDashoffset = '753';
+        main.style.backgroundImage = "url(img/img-3.jpg)";
+        userbox.style.top = "-800px";
+    });
+    step3.addEventListener('click',()=>{
+        circle.style.strokeDashoffset = '502';
+        main.style.backgroundImage = "url(img/img-4.jpg)";
+        userbox.style.top = "-1300px";
+    });
+    step4.addEventListener('click',()=>{
+        circle.style.strokeDashoffset = '201';
+        main.style.backgroundImage = "url(img/img-5.jpg)";
+        userbox.style.top = "-1800px";
+    });
+    step5.addEventListener('click',()=>{
+        circle.style.strokeDashoffset = '0';
+        main.style.backgroundImage = "url(img/img-1.jpg)";
+        userbox.style.top = "200px";
+    });
+</script>
+
+
+
+
+</body>
+</html>
